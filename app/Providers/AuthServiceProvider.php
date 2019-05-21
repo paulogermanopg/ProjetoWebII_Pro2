@@ -36,6 +36,14 @@ class AuthServiceProvider extends ServiceProvider
             return $user->id_adm == $livros->adm_id;
         });
 
+        $gate::define('alugar-livros', function (User $user, livros $livros){
+            return $user->id_adm != $livros->adm_id;
+        });
+
+        $gate::define('cadastrar-livros', function (User $user){
+            return $user->id_adm == 'adm';
+        });
+
         //
     }
 }
