@@ -2,7 +2,10 @@
 
 @section('content')
     <div class="row container">
-        <div class="col-sm-12">
+        <div class="col-sm-1">
+
+        </div>
+        <div class="col-sm-11">
             <H3 align="center">Acervo da Livraria da Tecnologia da Informação</H3>
             @can('cadastrar-livros')
             <a href="{{url("/livros/cadastrar")}}" style="font-size: 15pt;" class="btn">Cadastrar novo Livro</a>

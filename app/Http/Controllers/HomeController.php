@@ -56,10 +56,5 @@ class HomeController extends Controller
         return view('alugar-livros',compact('livro'));
     }
 
-    public function create()
-    {
-        $this->authorize('cadastrar-livros');
 
-        return view('cadastrar-livros');
-    }
 }

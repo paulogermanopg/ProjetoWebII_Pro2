@@ -20,7 +20,8 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/livros/{id}/update', 'HomeController@update')->name('home');
-Route::get('/livros/{id}/del', 'HomeController@del')->name('home');
-Route::get('/livros/{id}/alugar', 'HomeController@alugar')->name('home');
-Route::get('/livros/cadastrar', 'HomeController@create')->name('home');
+Route::get('/livros/{id}/del', 'HomeController@del')->name('deletarLivro');
+Route::get('/livros/{id}/alugar', 'HomeController@alugar')->name('alugarLivro');
+Route::get('/livros/cadastrar', 'livrosController@create')->name('cadastrarLivro');
+Route::get('/livros/cadastrar/enviar', 'livrosController@novoLivro')->name('cadastroEnviar');
 
