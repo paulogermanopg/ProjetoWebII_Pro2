@@ -26,4 +26,5 @@ Route::get('/livros/{id}/alugar', 'HomeController@alugar')->name('alugarLivro');
 Route::get('/livros/cadastrar/enviar', 'livrosController@novoLivro')->name('cadastroEnviar');
 Route::get('/livros/user/{id}/mudar', 'usereditController@mudarUser')->name('userMudar');
 Route::get('/livros/user/listar', 'usereditController@listarUser')->name('userLista');
+Route::get('/livros/alugar/{id}', 'usereditController@listarUser')->name('userLista');
 
