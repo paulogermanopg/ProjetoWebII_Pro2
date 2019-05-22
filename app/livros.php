@@ -8,6 +8,6 @@ use Illuminate\Notifications\Notifiable;
 class livros extends Model
 {
     use Notifiable;
-    protected $fillable=['nome','estado','autor','categoria','isbn'];
+    protected $fillable=['id','nome','estado','autor','categoria','isbn'];
     //
 }

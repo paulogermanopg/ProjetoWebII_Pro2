@@ -35,7 +35,7 @@ class HomeController extends Controller
 
         $this->authorize('update-livros', $livro);
 
-        return view('update-livro',compact('livro'));
+        return view('editar',compact('livro'));
     }
 
     public function del($idlivro)

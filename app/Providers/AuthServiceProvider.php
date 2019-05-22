@@ -43,7 +43,9 @@ class AuthServiceProvider extends ServiceProvider
         $gate::define('cadastrar-livros', function (User $user){
             return $user->id_adm == 'adm';
         });
-
+        $gate::define('user-mudar', function (User $user){
+            return $user->id_adm == 'adm';
+        });
         //
     }
 }
