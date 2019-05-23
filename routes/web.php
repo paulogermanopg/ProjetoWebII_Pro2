@@ -26,5 +26,8 @@ Route::get('/livros/{id}/alugar', 'HomeController@alugar')->name('alugarLivro');
 Route::get('/livros/cadastrar/enviar', 'livrosController@novoLivro')->name('cadastroEnviar');
 Route::get('/livros/user/{id}/mudar', 'usereditController@mudarUser')->name('userMudar');
 Route::get('/livros/user/listar', 'usereditController@listarUser')->name('userLista');
-Route::get('/livros/alugar/{id}', 'usereditController@listarUser')->name('userLista');
+Route::get('/livros/{id}/alugar', 'reservasController@agendarReservas')->name('agendaReserva');
+Route::get('/livros/{id}/alugar/{rLivro}', 'reservasController@agendarReservas02')->name('agendaReserva02');
+Route::get('/livros/reservas/listar', 'reservasController@listarReservas')->name('reservasLista');
+Route::get('/livros/reservas/{id}/excluir', 'reservasController@excluirReserva')->name('reservaEcluir');
 

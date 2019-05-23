@@ -18,7 +18,7 @@
                         </td>
                         <br/>
                         <td>
-                            <a href="{{url("/livros/user/listar")}}" class="btn btn-primary">Listar reservas</a>
+                            <a href="{{url("/livros/reservas/listar")}}" class="btn btn-primary">Listar reservas</a>
                             <br/>
                         </td>
                         <td>
@@ -104,8 +104,11 @@
                 </tr>
                 @endcan
                 @can('alugar-livros',$livros)
+                    <?php
+                            $null = 'null';
+                    ?>
                     <tr>
-                        <th scope="row" colspan="5"><a href="{{url("/livros/$livros->id/alugar")}}" class="btn">Alugar</a></th>
+                        <th scope="row" colspan="5"><a href="{{url("/livros/$livros->id/alugar/$null")}}" class="btn btn-secondary">Reservar Livro</a></th>
                     </tr>
                 @endcan
                 </tbody>

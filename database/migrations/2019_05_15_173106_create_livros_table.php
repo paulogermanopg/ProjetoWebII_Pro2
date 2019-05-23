@@ -13,7 +13,7 @@ class CreateLivrosTable extends Migration
      */
     public function up()
     {
-       // if(!Schema::hasTable('password_resets')) {
+        if(!Schema::hasTable('password_resets')) {
             Schema::create('livros', function (Blueprint $table) {
                 $table->bigIncrements('id');
                 $table->string('adm_id')->default('adm');
@@ -24,7 +24,7 @@ class CreateLivrosTable extends Migration
                 $table->string('isbn');
                 $table->timestamps();
             });
-       // }
+        }
 
     }
 

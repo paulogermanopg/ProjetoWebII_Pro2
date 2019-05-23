@@ -17,7 +17,7 @@ class CreateReservasTable extends Migration
             $table->bigIncrements('id');
             $table->string('adm_id')->default('adm');
             $table->string('id_livro');
-            $table->string('e-mail');
+            $table->string('email');
             $table->string('livro');
             $table->string('isbn');
             $table->integer('dia');
