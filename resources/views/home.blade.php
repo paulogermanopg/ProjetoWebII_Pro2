@@ -123,7 +123,7 @@
 
                                     </div>
                                     <div class="col-sm-10">
-                                        <form method="GET" action="{{ route('enviarupdateLivro') }}">
+                                        <form method="GET" action="{{ route('enviarupdateLivros') }}">
                                             <div class="form-group" style="display: none;">
                                                 <label for="id">Id</label>
                                                 <input type="text" class="form-control" id="id" name="id" value="{{$livros->id}}">
