@@ -100,8 +100,8 @@
                 <tr>
                     <th scope="row" colspan="3"><a href="{{url("/livros/$livros->id/update")}}" class="btn btn-secondary">Editar</a></th>
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ED{{$livros->id}}">
-                        Excluir
-                    </button></td>
+                        Editar
+                    </button>
                     <td scope="row" colspan="2"> <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#EX{{$livros->id}}">
                         Excluir
                         </button></td>
