@@ -102,16 +102,6 @@
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#EX{{$livros->id}}">
                         Excluir
                     </button>
-                  <!--  <td scope="row" colspan="2"><a href="{{url("/livros/$livros->id/del")}}" class="btn btn-danger">Excluir</a></td> -->
-                </tr>
-                @endcan
-                @can('alugar-livros',$livros)
-                    <?php
-                            $null = 'null';
-                    ?>
-                    <tr>
-                        <th scope="row" colspan="5"><a href="{{url("/livros/$livros->id/alugar/$null")}}" class="btn btn-secondary">Reservar Livro</a></th>
-                    </tr>
                     <div class="modal fade" id="ex{{$livros->id}}" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
@@ -135,6 +125,16 @@
                             </div>
                         </div>
                     </div>
+                  <!--  <td scope="row" colspan="2"><a href="{{url("/livros/$livros->id/del")}}" class="btn btn-danger">Excluir</a></td> -->
+                </tr>
+                @endcan
+                @can('alugar-livros',$livros)
+                    <?php
+                            $null = 'null';
+                    ?>
+                    <tr>
+                        <th scope="row" colspan="5"><a href="{{url("/livros/$livros->id/alugar/$null")}}" class="btn btn-secondary">Reservar Livro</a></th>
+                    </tr>
                 @endcan
                 </tbody>
             </table>
