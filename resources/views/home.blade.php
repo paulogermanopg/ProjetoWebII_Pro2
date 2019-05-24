@@ -126,7 +126,7 @@
                                         <form method="GET" action="{{ route('enviarupdateLivros') }}">
                                             <div class="form-group" >
                                                 <label for="id">Id</label>
-                                                <input type="text" class="form-control" id="id" name="id" value="{{$livros->id}}">
+                                                <input type="number" class="form-control" id="id" name="id" value="{{$livros->id}}">
                                             </div>
                                             <div class="form-group">
                                                 <label for="nome">Nome do Livro</label>
