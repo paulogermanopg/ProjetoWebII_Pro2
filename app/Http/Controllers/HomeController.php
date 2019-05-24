@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\livros;
-use App\reservas;
 
 class HomeController extends Controller
 {
@@ -23,7 +22,7 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index(reservas $livros)
+    public function index(livros $livros)
     {
       $livros_livros = $livros -> all();
 
