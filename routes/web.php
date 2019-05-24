@@ -30,3 +30,4 @@ Route::get('/livros/{id}/alugar/{rLivro}', 'reservasController@agendarReservas02
 Route::get('/livros/reservas/listar', 'reservasController@listarReservas')->name('reservasLista');
 Route::get('/livros/reservas/{id}/excluir', 'reservasController@excluirReserva')->name('reservaEcluir');
 
+
