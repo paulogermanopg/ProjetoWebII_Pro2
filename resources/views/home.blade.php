@@ -108,7 +108,7 @@
                     <td scope="row" colspan="2"><a href="{{url("/livros/$livros->id/del")}}" class="btn btn-danger">Excluir</a></td>
                 </tr>
 
-                <div class="modal fade" id="E{{$livros->id}}"" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
+                <div class="modal fade" id="E{{$livros->id}}" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
