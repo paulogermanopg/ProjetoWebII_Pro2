@@ -163,11 +163,11 @@
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="categoria">Categoria</label>
-                                                    <input type="text" class="form-control" id="categoria" name="categoria" placeholder="Programação, Redes, Administração..." value="{{$livros>categoria}}">
+                                                    <input type="text" class="form-control" id="categoria" name="categoria" placeholder="Programação, Redes, Administração..." value="{{$livros->categoria}}">
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="isbn">ISBN</label>
-                                                    <input type="text" class="form-control" id="isbn" name="isbn" placeholder="Digite apenas números" value="{{$livros>isbn}}">
+                                                    <input type="text" class="form-control" id="isbn" name="isbn" placeholder="Digite apenas números" value="{{$livros->isbn}}">
                                                 </div>
                                                 <button type="submit" class="btn btn-primary">Atualizar</button>
                                             </form>
