@@ -99,7 +99,10 @@
                 @can('update-livros',$livros)
                 <tr>
                     <th scope="row" colspan="3"><a href="{{url("/livros/$livros->id/update")}}" class="btn btn-secondary">Editar</a></th>
-                    <td scope="row" colspan="2"><a href="{{url("/livros/$livros->id/del")}}" class="btn btn-danger">Excluir</a></td>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#EX{{$livros->id}}">
+                        Excluir
+                    </button>
+                  <!--  <td scope="row" colspan="2"><a href="{{url("/livros/$livros->id/del")}}" class="btn btn-danger">Excluir</a></td> -->
                 </tr>
                 @endcan
                 @can('alugar-livros',$livros)
@@ -109,6 +112,29 @@
                     <tr>
                         <th scope="row" colspan="5"><a href="{{url("/livros/$livros->id/alugar/$null")}}" class="btn btn-secondary">Reservar Livro</a></th>
                     </tr>
+                    <div class="modal fade" id="ex{{$livros->id}}" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="EX{{$livros->id}}">EXCLUIR LIVRO</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-sm-1">
+
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <h3>Deseja realmente excluir este livro?</h3>
+                                        </div>
+                                    </div>
+                                    <a href="{{url("/livros/$livros->id/del")}}" class="btn btn-danger">Excluir</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 @endcan
                 </tbody>
             </table>
