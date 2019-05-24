@@ -123,10 +123,10 @@
 
                                     </div>
                                     <div class="col-sm-10">
-                                        <form method="GET" action="{{ route('enviarupdateLivros') }}">
-                                            <div class="form-group" >
+                                        <form method="GET" action="{{ route('enviarupdateLivro') }}">
+                                            <div class="form-group" style="display: none;">
                                                 <label for="id">Id</label>
-                                                <input type="number" class="form-control" id="id" name="id" value="{{$livros->id}}">
+                                                <input type="text" class="form-control" id="id" name="id" value="{{$livros->id}}">
                                             </div>
                                             <div class="form-group">
                                                 <label for="nome">Nome do Livro</label>
@@ -148,7 +148,7 @@
                                                 <label for="isbn">ISBN</label>
                                                 <input type="text" class="form-control" id="isbn" name="isbn" placeholder="Digite apenas números" value="{{$livros->isbn}}">
                                             </div>
-                                            <button type="submit" class="btn btn-primary">Alterar dados</button>
+                                            <button type="submit" class="btn btn-primary">Atualizar</button>
                                         </form>
                                     </div>
                                 </div>
