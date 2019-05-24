@@ -112,7 +112,7 @@
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="Cadastrarmodal">CADASTRAR LIVRO</h5>
+                                <h5 class="modal-title" id="E{{$livros->id}}">ATUALIZAR LIVRO</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
@@ -123,7 +123,7 @@
 
                                     </div>
                                     <div class="col-sm-10">
-                                        <form method="GET" action="{{ route('enviarupdateLivro') }}">
+                                        <form method="GET" action="{{ route('enviarupdateLivros') }}">
                                             <div class="form-group">
                                                 <label for="nome">Nome do Livro</label>
                                                 <input type="text" class="form-control" id="nome" name="nome" placeholder="Insira o nome do livro" value="{{$livros->nome}}">
