@@ -38,23 +38,4 @@ class HomeController extends Controller
         return view('editar',compact('livro'));
     }
 
-    public function del($idlivro)
-    {
-        $livro = livros::find($idlivro);
-
-        $this->authorize('del-livros', $livro);
-
-        return view('del-livros',compact('livro'));
-    }
-
-    public function alugar($idlivro)
-    {
-        $livro = livros::find($idlivro);
-
-        $this->authorize('alugar-livros', $livro);
-
-        return view('alugar-livros',compact('livro'));
-    }
-
-
 }
