@@ -79,7 +79,8 @@ class livrosController extends Controller
             return redirect('/home');
         }
         else {
-            return redirect()->back();
+            //return redirect()->back();
+            return redirect('/home');
         }
 
     }
