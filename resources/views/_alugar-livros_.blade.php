@@ -221,14 +221,23 @@
                         }
                     ?>
                     <table class="table">
-                        <a href="{{url("/livros/$idLivro/alugar/$rLivros[0]")}}" class="btn btn-secondary" style="{{$displaynone}}">Dia {{$rLivros[0]}}</a>
-                        <a href="{{url("/livros/$idLivro/alugar/$rLivros[1]")}}" class="btn btn-secondary" style="{{$displaynone1}}">Dia {{$rLivros[1]}}</a>
-                        <a href="{{url("/livros/$idLivro/alugar/$rLivros[2]")}}" class="btn btn-secondary" style="{{$displaynone2}}">Dia {{$rLivros[2]}}</a>
-                        <a href="{{url("/livros/$idLivro/alugar/$rLivros[3]")}}" class="btn btn-secondary" style="{{$displaynone3}}">Dia {{$rLivros[3]}}</a>
-                        <a href="{{url("/livros/$idLivro/alugar/$rLivros[4]")}}" class="btn btn-secondary" style="{{$displaynone4}}">Dia {{$rLivros[4]}}</a>
-                        <a href="{{url("/livros/$idLivro/alugar/$rLivros[5]")}}" class="btn btn-secondary" style="{{$displaynone5}}">Dia {{$rLivros[5]}}</a>
-                        <a href="{{url("/livros/$idLivro/alugar/$rLivros[6]")}}" class="btn btn-secondary" style="{{$displaynone6}}">Dia {{$rLivros[6]}}</a>
-                        <a href="{{url("/livros/$idLivro/alugar/$rLivros[7]")}}" class="btn btn-secondary" style="{{$displaynone7}}">Dia {{$rLivros[7]}}</a>
+                        <thead>
+                        <tr>
+                            <th scope="col" colspan="8">Dias disponíveis</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="{{url("/livros/$idLivro/alugar/$rLivros[0]")}}" class="btn btn-secondary" style="{{$displaynone}}">Dia {{$rLivros[0]}}</a></td>
+                                <td><a href="{{url("/livros/$idLivro/alugar/$rLivros[1]")}}" class="btn btn-secondary" style="{{$displaynone1}}">Dia {{$rLivros[1]}}</a></td>
+                                <td><a href="{{url("/livros/$idLivro/alugar/$rLivros[2]")}}" class="btn btn-secondary" style="{{$displaynone2}}">Dia {{$rLivros[2]}}</a></td>
+                                <td><a href="{{url("/livros/$idLivro/alugar/$rLivros[3]")}}" class="btn btn-secondary" style="{{$displaynone3}}">Dia {{$rLivros[3]}}</a></td>
+                                <td><a href="{{url("/livros/$idLivro/alugar/$rLivros[4]")}}" class="btn btn-secondary" style="{{$displaynone4}}">Dia {{$rLivros[4]}}</a></td>
+                                <td><a href="{{url("/livros/$idLivro/alugar/$rLivros[5]")}}" class="btn btn-secondary" style="{{$displaynone5}}">Dia {{$rLivros[5]}}</a></td>
+                                <td><a href="{{url("/livros/$idLivro/alugar/$rLivros[6]")}}" class="btn btn-secondary" style="{{$displaynone6}}">Dia {{$rLivros[6]}}</a></td>
+                                <td><a href="{{url("/livros/$idLivro/alugar/$rLivros[7]")}}" class="btn btn-secondary" style="{{$displaynone7}}">Dia {{$rLivros[7]}}</a></td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
                 <div class="col-sm-3">
