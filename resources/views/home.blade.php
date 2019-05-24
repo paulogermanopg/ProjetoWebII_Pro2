@@ -147,27 +147,27 @@
                                             <form method="GET" action="{{ route('enviarupdateLivro') }}">
                                                 <div class="form-group" style="display: none;">
                                                     <label for="id">Id</label>
-                                                    <input type="text" class="form-control" id="id" name="id" value="{{$livro->id}}">
+                                                    <input type="text" class="form-control" id="id" name="id" value="{{$livros->id}}">
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="nome">Nome do Livro</label>
-                                                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Insira o nome do livro" value="{{$livro->nome}}">
+                                                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Insira o nome do livro" value="{{$livros->nome}}">
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="estado">Estado do Livro</label>
-                                                    <input type="text" class="form-control" id="estado" name="estado" placeholder="Novo, velho, desgastado etc." value="{{$livro->estado}}">
+                                                    <input type="text" class="form-control" id="estado" name="estado" placeholder="Novo, velho, desgastado etc." value="{{$livros->estado}}">
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="autor">Autor</label>
-                                                    <input type="text" class="form-control" id="autor" name="autor" placeholder="Quem é o autor do livro?" value="{{$livro->autor}}">
+                                                    <input type="text" class="form-control" id="autor" name="autor" placeholder="Quem é o autor do livro?" value="{{$livros->autor}}">
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="categoria">Categoria</label>
-                                                    <input type="text" class="form-control" id="categoria" name="categoria" placeholder="Programação, Redes, Administração..." value="{{$livro->categoria}}">
+                                                    <input type="text" class="form-control" id="categoria" name="categoria" placeholder="Programação, Redes, Administração..." value="{{$livros>categoria}}">
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="isbn">ISBN</label>
-                                                    <input type="text" class="form-control" id="isbn" name="isbn" placeholder="Digite apenas números" value="{{$livro->isbn}}">
+                                                    <input type="text" class="form-control" id="isbn" name="isbn" placeholder="Digite apenas números" value="{{$livros>isbn}}">
                                                 </div>
                                                 <button type="submit" class="btn btn-primary">Atualizar</button>
                                             </form>
