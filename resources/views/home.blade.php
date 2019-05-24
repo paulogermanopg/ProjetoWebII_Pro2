@@ -99,6 +99,9 @@
                 @can('update-livros',$livros)
                 <tr>
                     <th scope="row" colspan="3"><a href="{{url("/livros/$livros->id/update")}}" class="btn btn-secondary">Editar</a></th>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ED{{$livros->id}}">
+                        Excluir
+                    </button></td>
                     <td scope="row" colspan="2"> <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#EX{{$livros->id}}">
                         Excluir
                         </button></td>
@@ -125,7 +128,55 @@
                             </div>
                         </div>
                     </div>
-                  <!--  <td scope="row" colspan="2"><a href="{{url("/livros/$livros->id/del")}}" class="btn btn-danger">Excluir</a></td> -->
+                    <div class="modal fade" id="ED{{$livros->id}}" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ED{{$livros->id}}">EDITAR LIVRO</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+
+                                        <div class="col-sm-3">
+
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <form method="GET" action="{{ route('enviarupdateLivro') }}">
+                                                <div class="form-group" style="display: none;">
+                                                    <label for="id">Id</label>
+                                                    <input type="text" class="form-control" id="id" name="id" value="{{$livro->id}}">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="nome">Nome do Livro</label>
+                                                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Insira o nome do livro" value="{{$livro->nome}}">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="estado">Estado do Livro</label>
+                                                    <input type="text" class="form-control" id="estado" name="estado" placeholder="Novo, velho, desgastado etc." value="{{$livro->estado}}">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="autor">Autor</label>
+                                                    <input type="text" class="form-control" id="autor" name="autor" placeholder="Quem é o autor do livro?" value="{{$livro->autor}}">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="categoria">Categoria</label>
+                                                    <input type="text" class="form-control" id="categoria" name="categoria" placeholder="Programação, Redes, Administração..." value="{{$livro->categoria}}">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="isbn">ISBN</label>
+                                                    <input type="text" class="form-control" id="isbn" name="isbn" placeholder="Digite apenas números" value="{{$livro->isbn}}">
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Atualizar</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </tr>
                 @endcan
                 @can('alugar-livros',$livros)
