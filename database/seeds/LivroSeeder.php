@@ -16,6 +16,7 @@ class LivroSeeder extends Seeder
             'nome' => 'O Paradoxo',
             'estado' => 'Novo',
             'autor' =>'Paulo Germano',
+            'categoria' =>'Literaturas',
             'isbn' => '123456789-9',
         ]);
         //
