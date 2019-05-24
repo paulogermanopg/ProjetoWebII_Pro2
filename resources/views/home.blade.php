@@ -102,7 +102,7 @@
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#EX{{$livros->id}}">
                         Excluir
                     </button>
-                    <div class="modal fade" id="ex{{$livros->id}}" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
+                    <div class="modal fade" id="EX{{$livros->id}}" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
