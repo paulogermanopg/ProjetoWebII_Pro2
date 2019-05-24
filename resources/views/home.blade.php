@@ -144,7 +144,7 @@
 
                                         </div>
                                         <div class="col-sm-6">
-                                            <form method="GET" action="{{ route('enviarupdateLivro') }}">
+                                            <form method="GET" action="{{ route('home') }}">
                                                 <div class="form-group" style="display: none;">
                                                     <label for="id">Id</label>
                                                     <input type="text" class="form-control" id="id" name="id" value="{{$livros->id}}">
