@@ -99,9 +99,9 @@
                 @can('update-livros',$livros)
                 <tr>
                     <th scope="row" colspan="3"><a href="{{url("/livros/$livros->id/update")}}" class="btn btn-secondary">Editar</a></th>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#EX{{$livros->id}}">
+                    <tdscope="row" colspan="2" <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#EX{{$livros->id}}">
                         Excluir
-                    </button>
+                        </button></td>
                     <div class="modal fade" id="EX{{$livros->id}}" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
