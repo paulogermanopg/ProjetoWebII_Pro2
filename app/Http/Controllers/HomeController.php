@@ -26,7 +26,7 @@ class HomeController extends Controller
     {
       $livros_livros = $livros -> all();
 
-        return view('hometeste',compact('livros_livros'));
+        return view('_alugar-livros_',compact('livros_livros'));
     }
 
     public function update($idlivro)
