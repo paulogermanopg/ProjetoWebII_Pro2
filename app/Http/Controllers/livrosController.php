@@ -73,7 +73,7 @@ class livrosController extends Controller
             'estado' => $data_form['estado'],
             'autor' => $data_form['autor'],
             'categoria' => $data_form['categoria'],
-            'isbn' => $data_form['isbn']
+            'isbn' => $data_form['isbn'],
         ]);
         if ($update) {
             return redirect('/home');
