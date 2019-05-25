@@ -137,7 +137,7 @@
 
                 }
                 if($ano == $r->ano){
-                    if(($mes == $r->mês)||(($mes + 1) == (($r->mês)+1))){
+                    if(($mes == $r->mês)||(($mes + 1) == ($r->mês))){
 
                             if($rLivros[7] == $r->dia){
                                 $rLivros[7] = 0;
