@@ -66,7 +66,7 @@
         @forelse($reserva as $r)
             <?php
                 if($ano == $r->ano){
-                    if(($mes == $r->mês)||($mes == ($r->mês)+1)){
+                    if(($mes == $r->mês)||(($mes + 1) == ($r->mês))){
 
                             if($rLivros[0] == $r->dia){
                                 $rLivros[0] = 0;
@@ -77,7 +77,7 @@
 
                 }
                 if($ano == $r->ano){
-                    if(($mes == $r->mês)||($mes == ($r->mês)+1)){
+                    if(($mes == $r->mês)||(($mes + 1) == ($r->mês))){
 
                             if($rLivros[1] == $r->dia){
                                 $rLivros[1] = 0;
@@ -87,7 +87,7 @@
 
                 }
                 if($ano == $r->ano){
-                    if(($mes == $r->mês)||($mes == ($r->mês)+1)){
+                    if(($mes == $r->mês)||(($mes + 1) == ($r->mês))){
 
                             if($rLivros[2] == $r->dia){
                                 $rLivros[2] = 0;
@@ -97,7 +97,7 @@
 
                 }
                 if($ano == $r->ano){
-                    if(($mes == $r->mês)||($mes == ($r->mês)+1)){
+                    if(($mes == $r->mês)||(($mes + 1) == ($r->mês))){
 
                             if($rLivros[3] == $r->dia){
                                 $rLivros[3] = 0;
@@ -107,7 +107,7 @@
 
                 }
                 if($ano == $r->ano){
-                    if(($mes == $r->mês)||($mes == ($r->mês)+1)){
+                    if(($mes == $r->mês)||(($mes + 1) == ($r->mês))){
 
                             if($rLivros[4] == $r->dia){
                                 $rLivros[4] = 0;
@@ -117,7 +117,7 @@
 
                 }
                 if($ano == $r->ano){
-                    if(($mes == $r->mês)||($mes == ($r->mês)+1)){
+                    if(($mes == $r->mês)||(($mes + 1) == ($r->mês))){
 
                             if($rLivros[5] == $r->dia){
                                 $rLivros[5] = 0;
@@ -127,7 +127,7 @@
 
                 }
                 if($ano == $r->ano){
-                    if(($mes == $r->mês)||($mes == ($r->mês)+1)){
+                    if(($mes == $r->mês)||(($mes+ 1) == ($r->mês))){
 
                             if($rLivros[6] == $r->dia){
                                 $rLivros[6] = 0;
